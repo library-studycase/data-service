@@ -1,7 +1,5 @@
 package library.demo;
 
-import library.demo.UserContext;
-
 import javax.xml.ws.handler.Handler;
 import javax.xml.ws.handler.HandlerResolver;
 import javax.xml.ws.handler.PortInfo;
@@ -10,7 +8,7 @@ import java.util.List;
 
 public class HeaderHandlerResolver implements HandlerResolver {
 
-    UserContext userContext;
+    private UserContext userContext;
 
     public HeaderHandlerResolver(UserContext userContext) {
         this.userContext = userContext;

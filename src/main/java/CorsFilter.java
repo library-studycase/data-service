@@ -10,7 +10,9 @@ import java.io.IOException;
 
 @Priority(Integer.MIN_VALUE)
 public class CorsFilter extends OncePerRequestFilter {
-    public CorsFilter() { }
+
+    public CorsFilter() {
+    }
 
     @Override
     protected void doFilterInternal(HttpServletRequest req, HttpServletResponse resp, FilterChain chain)

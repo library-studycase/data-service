@@ -1,29 +1,12 @@
 package librarydemo
 
-import com.tsystems.dfmg.studies.library.datasource.domain.Book
-import com.tsystems.dfmg.studies.library.datasource.domain.BookDetailed
-import com.tsystems.dfmg.studies.library.datasource.domain.BookListPage
-import com.tsystems.dfmg.studies.library.datasource.domain.CreateRequest
-import com.tsystems.dfmg.studies.library.datasource.domain.CreateResponse
-import com.tsystems.dfmg.studies.library.datasource.domain.DeleteRequest
-import com.tsystems.dfmg.studies.library.datasource.domain.DeleteResponse
-import com.tsystems.dfmg.studies.library.datasource.domain.LibraryPort
-import com.tsystems.dfmg.studies.library.datasource.domain.LibraryPortService
-import com.tsystems.dfmg.studies.library.datasource.domain.ReadDetailedRequest
-import com.tsystems.dfmg.studies.library.datasource.domain.ReadDetailedResponse
-import com.tsystems.dfmg.studies.library.datasource.domain.ReadListPageRequest
-import com.tsystems.dfmg.studies.library.datasource.domain.ReadListPageResponse
-import com.tsystems.dfmg.studies.library.datasource.domain.UpdateRequest
-import com.tsystems.dfmg.studies.library.datasource.domain.UpdateResponse
+import com.tsystems.dfmg.studies.library.datasource.domain.*
 import grails.transaction.Transactional
-import library.demo.HeaderHandler
 import library.demo.HeaderHandlerResolver
 import library.demo.UserContext
 import org.springframework.http.HttpStatus
 
 import javax.annotation.PostConstruct
-import javax.xml.ws.BindingProvider
-import javax.xml.ws.handler.MessageContext
 
 @Transactional
 class BookService {

@@ -9,7 +9,7 @@ class BookController {
 
     static responseFormats = ['json']
 
-    static allowedMethods = [index:'GET', show:'GET', save:'POST', update:'PUT', delete:'DELETE']
+    static allowedMethods = [index: 'GET', show: 'GET', save: 'POST', update: 'PUT', delete: 'DELETE']
 
 
     def index(Integer offset, Integer limit, String titleFilter) {
@@ -18,7 +18,7 @@ class BookController {
 
     def show(long id) {
         if (id == null) {
-            throw  new MissingPropertyException("id")
+            throw new MissingPropertyException("id")
         }
         respond bookService.getBook(id)
     }
