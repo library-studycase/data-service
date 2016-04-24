@@ -1,4 +1,3 @@
-import library.demo.UserContext
 import library.demo.UserContextBean
 
 // Place your Spring DSL code here

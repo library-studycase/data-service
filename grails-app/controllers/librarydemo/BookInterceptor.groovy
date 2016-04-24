@@ -11,7 +11,7 @@ class BookInterceptor {
 
     boolean before() {
         String token = request.getHeader("X-Auth-Token")
-        User user = new RestTemplate().getForObject("http://spbnb-prc796.t-systems.ru:8091/users?token={token}", User.class, token)
+        User user = new RestTemplate().getForObject("http://localhost:8092/users?token={token}", User.class, token)
 
         userContext.setUser(user)
 
